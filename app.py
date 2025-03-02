@@ -12,7 +12,7 @@ st.title("IPL Win Predictor")
 # Importing data an model from pickel
 teams = pkl.load(open('team.pkl','rb'))
 cities = pkl.load(open('city.pkl','rb'))
-model = pkl.load(open('model.pkl','rb'))
+#model = pkl.load(open('model.pkl','rb'))
 
 # First Row and columns 
 
