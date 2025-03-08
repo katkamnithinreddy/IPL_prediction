@@ -12,7 +12,7 @@ st.title("IPL Win Predictor")
 
 
 
-import pickle
+'''import pickle
 import os
 
 # Get the current directory of the script
@@ -23,11 +23,14 @@ model_path = os.path.join(current_dir, 'model.pkl')
    
 # Load the model
 with open(model_path, 'rb') as file:
-    model = pickle.load(file)
+    model = pickle.load(file)'''
 
 # Importing data an model from pickel
 teams = pkl.load(open('team.pkl','rb'))
 cities = pkl.load(open('city.pkl','rb'))
+import joblib
+model = joblib.load("model.pkl")
+
 #model = pkl.load(open('model.pkl','rb'))
 
 # First Row and columns 
