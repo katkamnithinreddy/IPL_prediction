@@ -2,7 +2,6 @@
 import streamlit as st 
 import pickle as pkl 
 import pandas as pd 
-import sklearn
 
 
 # having a wide page layout
@@ -29,7 +28,7 @@ with open(model_path, 'rb') as file:
 # Importing data an model from pickel
 teams = pkl.load(open('team.pkl','rb'))
 cities = pkl.load(open('city.pkl','rb'))
-model = pkl.load(open('model.pkl','rb'))
+#model = pkl.load(open('model.pkl','rb'))
 
 # First Row and columns 
 
